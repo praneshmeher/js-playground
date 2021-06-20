@@ -1,0 +1,54 @@
+
+// variables
+$primary-color:#333;
+
+// ===========================================
+
+// nesting
+.a{
+    .b{
+
+    }
+}
+
+// ===========================================
+
+// partials
+// _base.scss
+
+// ===========================================
+
+// modules
+// @use 'partial'
+
+// ===========================================
+
+// mixins
+@mixin theme($color:blue){
+    background: $color;
+}
+.info{
+    @include theme
+}
+.alert{
+    @include theme($colr:red)
+}
+
+// ===========================================
+
+// extend/inheritance
+%display-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.a{
+    @extend %display-flex;
+}
+
+// ===========================================
+
+// operators
+.a{
+    width: 200px / 20px * 100%;
+}
