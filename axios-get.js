@@ -19,10 +19,10 @@ axios.get('/get',{
         userId:123
     }
 })
-.then(()=>{
+.then((response)=>{
 
 })
-.catch(()=>{
+.catch((error)=>{
 
 })
 .then(()=>{
