@@ -11,6 +11,3 @@ axios.post('/user', {
 .catch((error)=>{
 
 })
-.then(()=>{
-    // always executed
-})
