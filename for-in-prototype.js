@@ -2,10 +2,6 @@
 function Person(){
     this.firstname='Pranesh',
     this.lastname='Meher'
-    this.job=['Amdocs'],
-    this.address={
-        city:'Pune'
-    }
 }
 
 Person.prototype.getfullname = function(){
