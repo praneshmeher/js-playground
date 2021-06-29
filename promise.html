@@ -1,0 +1,25 @@
+
+<html>
+    <head>
+        <title>Promise</title>
+    </head>
+    <body>
+        
+        <script>
+
+            let promise = new Promise((resolve, reject)=>{
+                setTimeout(()=>{
+                    resolve()
+                },3000)
+            })
+
+            console.log(promise)
+
+            setTimeout(()=>{
+                console.log(promise)
+            },5000)
+
+        </script>
+    </body>
+</html>
+
