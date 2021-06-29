@@ -9,7 +9,7 @@
 
             let promise = new Promise((resolve, reject)=>{
                 setTimeout(()=>{
-                    resolve()
+                    resolve('Pranesh')
                 },3000)
             })
 
@@ -18,6 +18,15 @@
             setTimeout(()=>{
                 console.log(promise)
             },5000)
+
+            
+            promise
+            .then((data)=>{
+                console.log(data)
+            })
+            .catch((error)=>{
+                console.log(error)
+            })
 
         </script>
     </body>
