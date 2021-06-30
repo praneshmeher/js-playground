@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Async-Await</title>
+    </head>
+    <body>
+        
+        <script>
+            
+        async function asyncfunction(){
+            let result = 0
+            await setTimeout(()=>{result+1},5000)
+            await setTimeout(()=>{result+1},3000)
+            return await setTimeout(()=>{result+1},1000)
+           
+        }
+
+        let promise = asyncfunction()
+        console.log(promise)
+
+        promise.then((data)=>{
+            console.log(data)
+        })
+
+        </script>
+
+    </body>
+</html>
