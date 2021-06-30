@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Generator</title>
+    </head>
+    <body>
+        
+        <script>
+            function * generator(){
+                yield 1
+                yield 2
+                yield 3
+            }
+
+            const gen = generator()
+
+            for(let value of generator()){
+                console.log(value)
+            }
+
+            // console.log(gen.next())
+            // console.log(gen.next())
+            // console.log(gen.next())
+            // console.log(gen.next())
+
+        </script>
+        
+    </body>
+</html>
