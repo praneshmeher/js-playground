@@ -11,3 +11,19 @@ axios.post('/user', {
 .catch((error)=>{
 
 })
+
+
+
+axios({
+    method:'get',
+    url:'/users',
+    responseType:'application/json',
+    headets: {}
+
+})
+.then((response)=>{
+
+})
+.catch((error)=>{
+
+})
