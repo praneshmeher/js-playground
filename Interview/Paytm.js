@@ -49,21 +49,19 @@
 // 9
 
    
-// function add() {
-//     let num = 0
-//     let incr = function(){
-//         num = num + 10
-//         console.log(num)
-//     }
-//     return{
-//         incr:incr
-//     };
-// }
+function add() {
+    let num = 0
+    let incr = function(){
+        num = num + 10
+        console.log(num)
+    }
+    return this
+}
 
-// let data = add();
-// data.incr()//10
-// data.incr()//20
-// data.incr()//30
+let data = add();
+data.incr()//10
+data.incr()//20
+data.incr()//30
 
 
 // ----------------------------------------------------------
