@@ -55,7 +55,7 @@ promise.then((res)=>{
 
 
 for(var i=0; i<5; i++) {
-funcation x(i){ 
+function x(i){ 
     (setTimeout((i) => console.log(i),0))
     }
     
